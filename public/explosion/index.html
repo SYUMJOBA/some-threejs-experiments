@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some Game</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0px;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .button {
+            position: absolute;
+            color: black;
+            background: bisque;
+            padding: 8px;
+            bottom: 2em;
+            transition: 0.2s all linear;
+            user-select: none;
+        }
+        .button:hover {
+            box-shadow: 6px 6px 0px black;
+            padding-bottom: 4px;
+            padding-right: 4px;
+            border-bottom: 4px solid white;
+            border-right: 4px solid white;
+            background: black;
+            color: white;
+        }
+        .button:active {
+            background: aqua;
+        }
+        #explode {
+            left: 1em;
+        }
+        #reset {
+            left: 8em;
+        }
+        #random {
+            left: 12em;
+        }
+        #freeze {
+            left: 4em;
+            bottom: 6em;
+        }
+        #wakeup {
+            left: 8em;
+            bottom: 6em;
+        }
+    </style>
+    <div class="button" id="explode">
+        Explode
+    </div>
+    <div class="button" id="reset">
+        Reset
+    </div>
+    <div class="button" id="random">
+        Random
+    </div>
+    <div class="button" id="freeze">
+        Freeze
+    </div>
+    <div class="button" id="wakeup">
+        WakeUp
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>

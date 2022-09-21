@@ -1,0 +1,70 @@
+body {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+.title {
+    margin: 1em;
+    border-bottom: 2px solid black;
+}
+
+.paragraphContainer {
+    margin:  1em;
+}
+
+.paragraphTitle {
+    padding: 10px;
+    font-size: 2em;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.navButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navButton {
+    background: white;
+    color: black;
+    transition: all 0.5s;
+    padding: 8px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.navButton:hover {
+    margin: 0px 1em;
+    background: black;
+    color: white;
+    box-shadow: -6px -6px 0px black;
+    padding-left: 4px;
+    padding-top: 4px;
+    border-left: 4px solid white;
+    border-top: 4px solid white;
+}
+
+.navButton a {
+    text-decoration: none;
+    user-select: none;
+    color: inherit;
+    font-size: 16px;
+}
+
+.rotatingImage {
+    animation-name: spinning;
+    animation-duration: 4s;
+    margin: 1em;
+}
+
+@keyframes spinning {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
